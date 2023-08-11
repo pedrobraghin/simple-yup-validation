@@ -3,7 +3,7 @@ import nodemailer, { Transporter, SendMailOptions } from "nodemailer";
 
 class MailTrapBuilder {
   static build(): Transporter {
-    return nodemailer.createTransport(config.mailtrap);
+    return nodemailer.createTransport(config.emailProvider);
   }
 }
 
